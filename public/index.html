@@ -3,13 +3,78 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <title>ようこそ、jigインターンへ！</title>
+    <title>鯖江のおいしいごはん</title>
     <link rel="icon" href="data:image/x-icon;,">
     <link rel="stylesheet" href="./styles.css">
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- サーバーから返ってきた文字を表示する場所 -->
-    <h1 id="welcomeMessage"></h1>
+    <header class="hero">
+      <p id="welcomeMessage" class="hero-tag"></p>
+      <h1>鯖江のおいしいごはん🍚</h1>
+      <p class="hero-sub">ソースカツ丼・おろしそば・カフェまで、鯖江で人気のごはんスポットを集めました。</p>
+    </header>
+
+    <main>
+      <details class="category" open>
+        <summary><h2>🍖 ソースカツ丼 &amp; B級グルメ</h2></summary>
+        <div class="cards">
+          <article class="card">
+            <h3>ヨーロッパ軒 神明分店</h3>
+            <p class="tag">ソースカツ丼</p>
+            <p>1913年生まれ、福井名物ソースカツ丼の元祖の味。柔らかいカツと程よい酸味のウスターソースが絶品で、日曜の昼過ぎでも満席になる地元の人気店です。</p>
+            <p class="meta">📍 福井県鯖江市水落町1-12-21　☎ 0778-52-2582</p>
+          </article>
+          <article class="card">
+            <h3>ミート&amp;デリカささき</h3>
+            <p class="tag">サバエドッグ</p>
+            <p>2010年に考案された「サバエドッグ」は、歩きながら食べられるソースカツ丼スタイルのB級グルメ。鯖江を代表する名物として親しまれています。</p>
+          </article>
+        </div>
+      </details>
+
+      <details class="category">
+        <summary><h2>🥢 おろしそば</h2></summary>
+        <div class="cards">
+          <article class="card">
+            <h3>そば処 二男坊</h3>
+            <p class="tag">あげおろしそば</p>
+            <p>一番人気は名物「あげおろしそば」。こだわりの醤油ベースのだしに、カリカリの揚げ・そば・おろしが絡み合う絶妙な旨味が味わえます。</p>
+            <p class="meta">📍 福井県鯖江市吉江町512</p>
+          </article>
+          <article class="card">
+            <h3>名物手打そば そらば亭</h3>
+            <p class="tag">手打ちそば</p>
+            <p>鯖江産そば粉を二八で手打ち。コシのある太めの麺と、清水の湧き水で仕込んだだしが絶妙にマッチします。</p>
+            <p class="meta">📍 福井県鯖江市別所町36-22-1</p>
+          </article>
+          <article class="card">
+            <h3>ラポーゼかわだ レストラン</h3>
+            <p class="tag">おろしそば・山うに</p>
+            <p>河和田温泉のレストラン。河和田地区に古くから伝わる薬味「山うに」（ゆず・赤唐辛子・塩を擦って練り込んだ薬味）と一緒に味わうおろしそばが名物です。</p>
+          </article>
+        </div>
+      </details>
+
+      <details class="category">
+        <summary><h2>☕ カフェ &amp; スイーツ</h2></summary>
+        <div class="cards">
+          <article class="card">
+            <h3>happy cafe（ハッピーカフェ）</h3>
+            <p class="tag">カフェ・スイーツ</p>
+            <p>西山公園駅が最寄りのカフェ。公園散策の合間に立ち寄りたい、ゆったりくつろげるスポットです。</p>
+          </article>
+          <article class="card">
+            <h3>Aile（エール）</h3>
+            <p class="tag">間借りカフェ</p>
+            <p>JR鯖江駅近くにオープンした間借りカフェ。ドリンクとサンドイッチをテイクアウトして、鯖江市西山公園でピクニックするのもおすすめです（営業日限定なので事前確認を）。</p>
+          </article>
+        </div>
+      </details>
+    </main>
+
+    <footer>
+      <p>※ 掲載情報は2026年8月時点のWeb検索結果に基づいています。営業時間・定休日・営業日は事前に各店舗の情報をご確認ください。</p>
+    </footer>
   </body>
 </html>
